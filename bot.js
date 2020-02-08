@@ -24,7 +24,7 @@ client.channels.get("675302447849275392").send(`${ReBeL[Math.floor(Math.random()
 client.on('ready', async () => {
       let ReBeL = ["#profile","#credits"]
   setInterval(() => {
-client.channels.get("675302478870478874").send(`${ReBeL[Math.floor(Math.random() *ReBeL.length)]}`);//لا تنسى تحط أيدي الروم
+client.channels.get("675480873671327767").send(`${ReBeL[Math.floor(Math.random() *ReBeL.length)]}`);//لا تنسى تحط أيدي الروم
 },190000);
 });
 
@@ -33,7 +33,7 @@ client.channels.get("675302478870478874").send(`${ReBeL[Math.floor(Math.random()
 client.on('ready', async () => {
       let ReBeL = ["#rep <@531662951380156417>"]
   setInterval(() => {
-client.channels.get("675302478870478874").send(`${ReBeL[Math.floor(Math.random() *ReBeL.length)]}`);//لا تنسى تحط أيدي الروم
+client.channels.get("675480873671327767").send(`${ReBeL[Math.floor(Math.random() *ReBeL.length)]}`);//لا تنسى تحط أيدي الروم
 },1440000);
 });
 
@@ -41,7 +41,7 @@ client.channels.get("675302478870478874").send(`${ReBeL[Math.floor(Math.random()
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = ['spam','on'];
+    var setGame = ['spam','2'];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -65,18 +65,6 @@ client.on('ready', function(){
 });
 
 
-
-client.on("message", msg => {
-  if (msg.content === "p") {  
-    msg.reply("#profile"); 
-  }
-});
-
-client.on('message', msg=> {
-  if (msg.content === "#profile") {
-    msg.react('✅');
-  }
-});
 
 
 client.login(process.env.BOT_TOKEN);
